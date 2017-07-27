@@ -1,0 +1,46 @@
+-
+    var blocks = [
+        {
+            title:'Автотранспорт',
+            img: 'icon1'
+        },
+        {
+            title:'Будівництво, архітектура, землекористування',
+            img: 'icon2'
+        },
+        {
+            title:'Громадянство',
+            img: 'icon3'
+        },
+        {
+            title:'Захист прав дитини',
+            img: 'icon4'
+        },
+        {
+            title:'Реєстрація місця проживання/перебування',
+            img: 'icon5'
+        },
+        {
+            title:'Підприємницька діяльність',
+            img: 'icon6'
+        },
+        {
+            title:'Санітарне та епідермічне благополуччя, ветеринарна медицина',
+            img: 'icon7'
+        },
+        {
+            title:'Комунальне господарство',
+            img: 'icon8'
+        }
+    ]
+section.lightgey.content
+    .container
+        h1
+            |Виберіть категорію
+        ul.blocks
+            each item in blocks
+                li.blocks-item
+                    img.image(src='images/'+ item.img +'.png')
+                    p.text-block.darkblue-text: = item.title
+
+

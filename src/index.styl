@@ -1,0 +1,92 @@
+// base - start
+*
+	box-sizing border-box
+
+body
+	margin 0
+
+.header
+	height 80px
+
+	&-title
+		text-align center
+		font-size 34px
+		font-family 'Roboto', sans-serif
+		font-weight bold
+		line-height 80px
+		margin 0
+		padding-left 30px
+		position relative
+
+		&:before
+			content ''
+			position absolute
+			background url(../images/book-icon.png) 50% no-repeat
+			top 50%
+			left 0
+			transform translateY(-50%)
+
+h1
+	font-weight bold
+	font-size 34px
+	text-align center
+	color #474d58
+	font-family 'Roboto', sans-serif
+	margin 0 0 40px
+
+.container
+	width 90%
+	max-width 1280px
+	margin auto
+
+// ---base
+
+
+
+// colors - start
+
+.darkblue
+	background #383e49
+	
+	&-text
+		color #383e49
+
+.white-text
+	color white!important
+
+.lightgey
+	background #ebeef6
+// --- colors
+
+// content
+.content
+	padding 40px
+	width 100%
+	display inline-block
+
+ul.blocks {
+	list-style none
+	margin 0
+	padding 0
+}
+li.blocks-item {
+	width calc(25% - 40px)
+	float left
+	min-height 275px
+	background #fff
+	text-align center
+	padding 50px 10px 15px
+	margin 20px
+	box-shadow 0 0px 1px 0 #d9dde5
+	border-radius 4px
+}
+.image
+	max-height 100px
+	max-width 100px
+
+.text-block
+	margin 41px 0 0
+	font-size 18px
+	line-height 22px
+	font-family 'Roboto',sans-serif
+	font-weight normal
